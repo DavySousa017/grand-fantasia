@@ -1,4 +1,3 @@
-// app.js
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -10,7 +9,6 @@ app.use(express.json());
 
 app.use("/api", apiRoutes);
 
-const PORT = process.env.PORT || 3000;
 app.listen(3000, "localhost", function () {
   console.log("Servidor rodando na porta 3000.");
 });

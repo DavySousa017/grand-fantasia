@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Cor do "rastro" da barra de rolagem (o espaço não preenchido) */
+::-webkit-scrollbar-track-piece:start {
+    background: black;
+}
+
+/* Cor da barra de rolagem em si */
+::-webkit-scrollbar-thumb {
+    background: #BF2C2C;
+}
