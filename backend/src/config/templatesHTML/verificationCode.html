@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Código de Verificação</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+      * {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #bf2c2c;
+      }
+      p {
+        font-size: 16px;
+      }
+      .verification-code {
+        font-size: 24px;
+        font-weight: bold;
+        color: #28a745;
+        margin-top: 10px;
+      }
+      .instructions {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Grand Fantasia</h1>
+      <h2>Olá, <%= username %></h2>
+      <p>
+        Você está recebendo este e-mail porque solicitou um código de
+        verificação.
+      </p>
+      <p>Aqui está o seu código:</p>
+      <p class="verification-code"><%= code %></p>
+      <div class="instructions">
+        <p>
+          Por favor, utilize este código para concluir a verificação ou o
+          processo de autenticação.
+        </p>
+        <p>
+          Este código é válido por um período específico de tempo. Se não foi
+          você quem solicitou este código, ignore este e-mail.
+        </p>
+        <p>Se precisar de alguma assistência, não hesite em nos contatar.</p>
+      </div>
+      <p>Obrigado,</p>
+      <p>Grand Fantasia</p>
+    </div>
+  </body>
+</html>

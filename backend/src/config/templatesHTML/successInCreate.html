@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Código de Verificação</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+      * {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #bf2c2c;
+      }
+      p {
+        font-size: 16px;
+      }
+      .verification-code {
+        font-size: 24px;
+        font-weight: bold;
+        color: #28a745;
+        margin-top: 10px;
+      }
+      .instructions {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Grand Fantasia</h1>
+      <h2>Olá, <%= username %></h2>
+      <p>Estamos felizes em informar que sua conta foi criada com sucesso!</p>
+      <div class="instructions">
+        <p>
+          A partir de agora, você faz parte da comunidade
+          <b>Grand Fantasia</b>. Agradecemos por se juntar a nós para explorar
+          um mundo repleto de aventuras e diversão.
+        </p>
+        <p>
+          Se precisar de suporte ou assistência, nossa equipe está disponível
+          para ajudar. Conte conosco sempre que precisar.<br />
+          Agradecemos por escolher o <b>Grand Fantasia</b> e estamos ansiosos
+          para ver você em nossas aventuras emocionantes.
+        </p>
+      </div>
+      <p>
+        Atenciosamente,<br /><br />
+        <b>Grand Fantasia</b>
+      </p>
+    </div>
+  </body>
+</html>
